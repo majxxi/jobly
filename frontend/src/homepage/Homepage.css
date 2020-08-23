@@ -1,0 +1,16 @@
+.Homepage {
+    /* put around the vertical center of page */
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    height: 40rem;
+}
+
+@media (max-width: 600px) {
+    .title {
+        height: 12rem;
+    }
+}
