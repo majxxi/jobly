@@ -1,0 +1,28 @@
+{
+  "name": "users-companies-jobs-solution",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "jsonschema": "^1.2.4",
+    "jsonwebtoken": "^8.5.0",
+    "locus": "^2.0.1",
+    "morgan": "^1.9.1",
+    "pg": "^8.0.3"
+  },
+  "devDependencies": {
+    "supertest": "^3.4.2"
+  },
+  "description": ""
+}
