@@ -17,11 +17,11 @@ const loginFields = [
 ];
 
 const signupFields = [
-  { input: "username", label: "Username" },
-  { input: "password", label: "Password" },
-  { input: "first_name", label: "First name" },
-  { input: "last_name", label: "Last name" },
-  { input: "email", label: "Email" }
+  { input: "username", label: "Username", type: "text" },
+  { input: "password", label: "Password", type: "password" },
+  { input: "first_name", label: "First name", type: "text" },
+  { input: "last_name", label: "Last name", type: "text" },
+  { input: "email", label: "Email", type: "text" }
 ];
 
 function LoginSignUpForm({ login, signup}){
@@ -59,10 +59,7 @@ function LoginSignUpForm({ login, signup}){
         } else {
           await login(data);
         }
-
-        // response.status === "error"
-        // ? setErrors({ ...response.message })
-        // : history.push('/companies');
+        
       }}
     >
       {({ values, errors, isSubmitting }) => (
